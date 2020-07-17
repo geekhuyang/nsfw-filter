@@ -76,3 +76,12 @@ nsfwjs.load(MODEL_PATH).then(model => {
     return true; // needed to make the content script wait for the async processing to complete
   });
 });
+
+// Should be able to get the value from the user through popup 
+// and only apply those filters that the user has selected
+
+// chrome.runtime.onInstalled.addListener(function () {
+//   chrome.storage.sync.set({ blur: true, replace: false, watermark: false }, function () {
+//     console.log("Working!");
+//   })
+// });

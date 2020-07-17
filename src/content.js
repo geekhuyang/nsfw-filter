@@ -19,9 +19,17 @@
 // Used for DEBUGGING purposes.
 const DEBUG = 1;
 if (!DEBUG) console.log = () => { };
+
+// This should be initially loaded from the storage and it 
+// should retain the value set by the user in the popup.
+
+// let BLUR = localStorage.getItem('blur');
+// let REPLACE = localStorage.getItem('replace');
+// let WATERMARK = localStorage.getItem('watermark');
+
 let BLUR = 1;
 let REPLACE = 0;
-let WATERMARK = 0;
+let WATERMARK = 1;
 
 const WATERMARK_TEXT = "NSFW";
 
